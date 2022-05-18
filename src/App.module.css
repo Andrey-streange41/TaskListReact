@@ -1,0 +1,11 @@
+
+
+.mainApp{
+    background: rgb(5,152,177);
+    background: linear-gradient(90deg, rgba(5,152,177,1) 6%, rgba(23,168,125,1) 89%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

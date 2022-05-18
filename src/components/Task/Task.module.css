@@ -1,0 +1,38 @@
+.wrapper{
+    width: 92%;
+    border-radius: 5px;border: solid rgb(187, 187, 187) 1px;
+    margin-top: 2%;
+    display: flex; justify-content: space-between; align-items: center;
+    height: 8%;
+    cursor: pointer;
+    font-family: 'Ropa Sans', sans-serif; font-size: 1.1em;
+}
+.testTask{
+    display: flex; align-items: center;
+    
+    color: #10980c;
+    padding-left: 2%;
+    text-transform: capitalize;font-weight: 600; font-size: 1.4rem;
+}
+
+.testTaskCompleted{
+    text-decoration: line-through;
+}
+
+.svgDeleteRecord{
+    width: 34px;
+    height: 34px;
+    margin-right: 1.5%;
+    fill: red;
+     z-index: 100;
+}
+
+.svgDeleteRecord:hover{
+    fill: rgb(9, 255, 0);
+    transition: 0.3s;
+}
+
+.ezSmill{
+    font-size: 1.2rem; 
+    
+}

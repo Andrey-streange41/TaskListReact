@@ -1,0 +1,34 @@
+.wrapper {
+  width: 92%;
+    border-radius: 5px;border: solid rgb(187, 187, 187) 1px;
+    margin-top: 2%;
+    display: flex; justify-content: space-between; align-items: center;
+    height: 8%;
+    
+    font-family: 'Ropa Sans', sans-serif; font-size: 1.1em;
+    
+}
+
+.myInput {
+  width: 100%;height: 90%;
+  border: none;
+  padding-left: 2%;
+  font-family: 'Ropa Sans', sans-serif; font-size: 1.1em;
+}
+
+.isAgree{
+    fill: red;
+    width: 34px;
+    height: 34px;
+    margin-right: 2%;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
+
+
+.isAgree:hover{
+  fill: rgb(9, 255, 0);
+  transition: 0.3s;
+}
