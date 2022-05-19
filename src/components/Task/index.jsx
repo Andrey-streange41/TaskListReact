@@ -2,9 +2,13 @@ import React, { Component } from "react";
 import taskStyle from "./Task.module.css";
 
 export default class Task extends Component {
-  constructor(props) {
-    super(props);
-  }
+ constructor(props){
+   super(props);
+
+   this.state = {
+      isCompleted: false
+   }
+ }
 
   removeItem = (e) => {
     console.log(e.target)
@@ -21,6 +25,7 @@ export default class Task extends Component {
         ? `${taskStyle.testTask}`
         : `${taskStyle.testTask} ${taskStyle.testTaskCompleted}`;
 
+        this.setState((s)=>{return{...s,isCompleted: !this.state.isCompleted ?  true :false }});
     this.props.updateBuffer(this.props.tasksList);
   };
 
@@ -29,7 +34,7 @@ export default class Task extends Component {
       <div className={taskStyle.wrapper}>
         <span onClick={this.selectCompleted} className={taskStyle.testTask}>
           {" "}
-          <span className={taskStyle.ezSmill}>✔️</span>
+          <span className={taskStyle.ezSmill}> {this.state.isCompleted?"✔️":null}  </span>
           {this.props.content}
         </span>
         
