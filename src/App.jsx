@@ -8,7 +8,7 @@ import toDoStyles from "./ToDo.module.css";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       taskName: "",
       tasksList: ["helloo"],
@@ -27,21 +27,25 @@ class App extends React.Component {
     });
   };
 
-
-
   render() {
     const formatBuffer = [];
     try {
       if (this.state.tasksList.length > 0) {
         for (let i = 0; i < this.state.tasksList.length; i++) {
-          formatBuffer.push(<Task  tasksList={this.state.tasksList} updateBuffer={this.updateBuffer} key={i} content={this.state.tasksList[i]} />);
+          formatBuffer.push(
+            <Task
+              tasksList={this.state.tasksList}
+              updateBuffer={this.updateBuffer}
+              key={i}
+              content={this.state.tasksList[i]}
+            />
+          );
         }
       }
     } catch (error) {
       console.log(error);
     }
 
-    
     return (
       <main className={appStyle.mainApp}>
         <section className={toDoStyles.toDoBack}>

@@ -1,42 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&family=Ropa+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&family=Ropa+Sans&display=swap");
 
-.toDoBack{
+.toDoBack {
     background-color: white;
-    border-radius: 15px; border: solid black 1px;
-    height: 60vh; min-width: 30%; 
-    display: flex; flex-direction: column; justify-content: flex-start; align-items: center;
+    border-radius: 15px;
+    border: solid black 1px;
+    height: 60vh;
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     overflow: scroll;
 }
-@media screen and (min-width: 1200px){
-    .toDoBack{
+@media screen and (min-width: 1200px) {
+    .toDoBack {
         min-width: 30%;
     }
 }
-@media screen and (max-width: 1200px){
-    .toDoBack{
+@media screen and (max-width: 1200px) {
+    .toDoBack {
         min-width: 40%;
     }
 }
-@media screen and (max-width: 992px){
-    .toDoBack{
+@media screen and (max-width: 992px) {
+    .toDoBack {
         min-width: 50%;
     }
 }
-@media screen and (max-width: 768px){
-    .toDoBack{
+@media screen and (max-width: 768px) {
+    .toDoBack {
         min-width: 60%;
     }
 }
-@media screen and (max-width: 600px){
-    .toDoBack{
+@media screen and (max-width: 600px) {
+    .toDoBack {
         min-width: 75%;
     }
 }
 
-
-h1{
+h1 {
     height: 8vh;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 40px; font-weight: bold; font-family: 'Ropa Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Ropa Sans", sans-serif;
 }
-
